@@ -37,6 +37,7 @@ var converter = require('json-2-csv');
   * `CHECK_SCHEMA_DIFFERENCES` - Boolean - Should we require all documents to have the same schema? Default: `true`
   * `EMPTY_FIELD_VALUE` - String - The value of an empty field which might occur when using different schemas? Default: `"null"`
   * `PREPEND_HEADER` - Boolean - Should the auto-generated header be prepended as the first line in the CSV? Default: `true`
+  * `SORT_HEADER` - Boolean - Should the auto-generated header be sorted? Default: `false`
   * `EOL` - String - End of Line Delimiter. Default: `'\n'`
   * `KEYS` - Array - Specify the keys (as strings) that should be converted. Default: `null`
     * If you have a nested object (ie. {info : {name: 'Mike'}}), then set options.KEYS to ['info.name']
